@@ -1,0 +1,43 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.year-block,
+.month-block {
+    margin-bottom: 10px;
+}
+
+h3,
+h4 {
+    cursor: pointer;
+    background: #e9ecef;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+ul.post-list {
+    list-style: disc inside;
+    padding-left: 1rem;
+}
+
+ul.post-list li {
+    margin-bottom: 5px;
+}

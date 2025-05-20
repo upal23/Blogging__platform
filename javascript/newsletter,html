@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Newsletter Signup - Blogging Platform</title>
+  <link rel="stylesheet" href="styles/newsletter.css" />
+</head>
+<body>
+  <div class="signup-box">
+    <h2>Subscribe to Our Newsletter</h2>
+    <input type="email" id="email" placeholder="Enter your email" />
+    <div class="consent">
+      <input type="checkbox" id="gdpr" />
+      <label for="gdpr">I agree to receive emails and accept the GDPR policy.</label>
+    </div>
+    <button onclick="subscribe()">Subscribe</button>
+    <div id="message" class="message"></div>
+
+    <div class="admin-panel">
+      <h3>Admin View</h3>
+      <p>Total Subscribers: <span id="count">0</span></p>
+      <button onclick="exportEmails()">Export Emails</button>
+      <pre id="exported" style="display: none;"></pre>
+    </div>
+  </div>
+
+  <script src="scripts/newsletter.js"></script>
+</body>
+</html>

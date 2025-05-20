@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draft Editor - Blogging Platform</title>
+    <link rel="stylesheet" href="styles/draft.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>Write Your Post</h2>
+        <textarea id="draft-text" placeholder="Start typing..." oninput="autoSaveDraft()"></textarea>
+        <button onclick="restoreDraft()">Restore Last Draft</button>
+        <div class="status" id="status">Draft autosave is ON</div>
+        <div class="version-history" id="version-history"></div>
+    </div>
+
+    <script src="scripts/draft.js"></script>
+</body>
+
+</html>

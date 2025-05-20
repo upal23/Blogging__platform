@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search & Filter - Blogging Platform</title>
+    <link rel="stylesheet" href="styles/search.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Search & Filter Posts</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <input type="text" id="search-bar" placeholder="Search keyword..." onkeyup="filterResults()" />
+            <select id="category-filter" onchange="filterResults()">
+                <option value="">All Categories</option>
+                <option value="Technology">Technology</option>
+                <option value="Health">Health</option>
+                <option value="Politics">Politics</option>
+                <option value="Geopolitics">Geopolitics</option>
+            </select>
+            <button onclick="applyFilters()">Apply</button>
+        </aside>
+
+        <main>
+            <h2>Results</h2>
+            <ul id="results-list" class="results-list"></ul>
+        </main>
+    </div>
+
+    <script src="scripts/search.js"></script>
+</body>
+
+</html>

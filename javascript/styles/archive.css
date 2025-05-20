@@ -1,0 +1,39 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.archive-year,
+.archive-month {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+.archive-posts {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.archive-posts li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
